@@ -4,7 +4,7 @@ const path = require('path')
 
 console.log(__dirname)
 
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'src')))
 //express.static() 함수는 Express에서 제공하는 내장 미들웨어 함수로, 지정한 디렉토리의 정적 파일을 제공하는 역할을 합니다.
 //path.join(__dirname,'public')은 현재 파일이 위치한 디렉토리와 'public' 디렉토리를 합쳐서 절대 경로를 생성하는 코드입니다.
 //이렇게 생성된 절대 경로는 express.static() 함수의 첫 번째 인수로 전달됩니다.
